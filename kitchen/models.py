@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -28,7 +29,7 @@ class Dish(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
     dish_type = models.ForeignKey(DishType, on_delete=models.CASCADE)
-    cook = models.ManyToManyField(Cook, related_name="dishes")
+    cook = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="dishes")
 
     class Meta:
         ordering = ["name"]
