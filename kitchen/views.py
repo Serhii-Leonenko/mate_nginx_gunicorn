@@ -114,7 +114,6 @@ class DishUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Dish
     form_class = DishForm
     success_url = reverse_lazy("kitchen:dish-list")
-    template_name = "kitchen/dish_form.html"
 
 
 class DishDeleteView(LoginRequiredMixin, generic.DeleteView):
@@ -149,7 +148,7 @@ class CookListView(LoginRequiredMixin, generic.ListView):
 
 class CookDetailView(LoginRequiredMixin, generic.DetailView):
     model = Cook
-    queryset = Cook.objects.prefetch_related("dishes__dish_type")
+    queryset = Cook.objects.all().prefetch_related("dishes__dish_type")
     template_name = "kitchen/cook_detail.html"
 
 
@@ -160,7 +159,7 @@ class CookCreateView(LoginRequiredMixin, generic.CreateView):
     template_name = "kitchen/cook_form.html"
 
 
-class CookYearsOfExperienceUpdateView(LoginRequiredMixin, generic.UpdateView):
+class CookUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Cook
     form_class = CookYearsOfExperienceUpdateForm
     success_url = reverse_lazy("kitchen:cook-list")

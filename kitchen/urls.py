@@ -15,7 +15,7 @@ from kitchen.views import (
     CookCreateView,
     CookDetailView,
     CookListView,
-    CookYearsOfExperienceUpdateView,
+    CookUpdateView,
     toggle_assign_to_dish,
 
 )
@@ -88,7 +88,7 @@ urlpatterns = [
     ),
     path(
         "cooks/<int:pk>/update/",
-        CookYearsOfExperienceUpdateView.as_view(),
+        CookUpdateView.as_view(),
         name="cook-update",
     ),
     path(
