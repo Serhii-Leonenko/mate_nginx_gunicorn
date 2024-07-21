@@ -51,3 +51,26 @@ class DishTypeUpdateView(LoginRequiredMixin, generic.UpdateView):
 class DishTypeDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = DishType
     success_url = reverse_lazy("kitchen:dish-type-list")
+
+
+class DishListView(LoginRequiredMixin, generic.ListView):
+    model = Dish
+    paginate_by = 5
+    queryset = Dish.objects.select_related("dish_type")
+
+
+class DishDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Dish
+
+
+class DishCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Dish
+
+
+class DishUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Dish
+
+
+class DishDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Dish
+    success_url = reverse_lazy("kitchen:dish-list")
