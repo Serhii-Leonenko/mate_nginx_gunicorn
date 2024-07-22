@@ -1,0 +1,95 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Modern and clean font */
+  line-height: 1.6;
+  background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background for a vibrant look */
+  color: #333; /* Dark text color for readability */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  padding: 20px; /* Padding to prevent content from touching edges */
+}
+
+.container {
+  width: 100%; /* Full width for the main content area */
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  padding: 30px; /* Increased padding for more space */
+  text-align: center; /* Center text within the container */
+}
+
+/* Header styles */
+.header {
+  display: flex; /* Align header items in a row */
+  justify-content: space-between; /* Space between title and button */
+  align-items: center; /* Vertically center items */
+  margin-bottom: 20px; /* Space below header */
+}
+
+.title {
+  color: #2c3e50; /* Dark blue-gray color for the heading */
+  font-size: 2.5em; /* Larger font size for emphasis */
+}
+
+.create-button {
+  padding: 10px 20px; /* Padding for button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for button */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1em; /* Font size for button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.create-button:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* Styles for dish list */
+.dish-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  text-align: left; /* Align text to the left */
+}
+
+.dish-item {
+  padding: 10px 0; /* Padding for each item */
+  border-bottom: 1px solid #ddd; /* Light gray border for separation */
+}
+
+.dish-item:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+.dish-link {
+  display: block; /* Make the link take full width of the container */
+  padding: 10px; /* Add padding inside the link */
+  color: #007bff; /* Blue color for links */
+  background-color: #f8f9fa; /* Light background for each item */
+  border-radius: 4px; /* Rounded corners for background */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.dish-link:hover {
+  background-color: #e2e6ea; /* Slightly darker background on hover */
+  color: #0056b3; /* Darker color on hover */
+}
+
+.dish-id {
+  font-weight: bold; /* Bold font for ID */
+}
+
+.dish-name {
+  margin-left: 10px; /* Space between ID and name */
+}

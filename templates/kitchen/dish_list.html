@@ -1,24 +1,27 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
+{% load static %}
 
 {% block content %}
-  <h1>
-    Dish list
-    <a href="{% url 'kitchen:dish-create' %}" class="btn btn-primary link-to-page">
-      Create
-    </a>
-  </h1>
-  {% include "includes/search_form.html" %}
-  {% if dish_list %}
-    <ul>
-      {% for dish in dish_list %}
-        <li>
-          <a href="{% url "kitchen:dish-detail" pk=dish.id %} ">{{ dish.id }}</a>
-          {{ dish.name }} ({{ dish.dish_type.name }})
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p>There are no dish in restaurant</p>
-  {% endif %}
+  <link rel="stylesheet" href="{% static 'css/dish_list.css' %}">
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Dish List</h1>
+      <a href="{% url 'kitchen:dish-create' %}" class="create-button">Create</a>
+    </div>
+    {% include "includes/search_form.html" %}
+    {% if dish_list %}
+      <ul class="dish-list">
+        {% for dish in dish_list %}
+          <li class="dish-item">
+            <a href="{% url 'kitchen:dish-detail' pk=dish.id %}" class="dish-link">
+              {{ dish.name }} ({{ dish.dish_type.name }})
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No dishes in the restaurant.</p>
+    {% endif %}
+  </div>
 {% endblock %}
