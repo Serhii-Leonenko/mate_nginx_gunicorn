@@ -1,63 +1,62 @@
-
 .header {
-  display: flex;
-  justify-content: space-between; /* Space between title and buttons */
-  align-items: center; /* Align items vertically in the center */
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Space between title and buttons */
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 20px;
 }
 
 .header h1 {
-  color: #2c3e50; /* Dark blue-gray color for the heading */
-  font-size: 2em; /* Larger font size for emphasis */
+    color: #2c3e50; /* Dark blue-gray color for the heading */
+    font-size: 2em; /* Larger font size for emphasis */
 }
 
 .btn-group .btn {
-  margin-left: 10px; /* Space between buttons */
+    margin-left: 10px; /* Space between buttons */
 }
 
 .btn-danger {
-  background-color: #dc3545; /* Red background color for the danger button */
+    background-color: #dc3545; /* Red background color for the danger button */
 }
 
 .btn-danger:hover {
-  background-color: #c82333; /* Darker red background on hover */
+    background-color: #c82333; /* Darker red background on hover */
 }
 
 .btn-secondary {
-  background-color: #6c757d; /* Gray background color for the secondary button */
+    background-color: #6c757d; /* Gray background color for the secondary button */
 }
 
 .btn-secondary:hover {
-  background-color: #5a6268; /* Darker gray background on hover */
+    background-color: #5a6268; /* Darker gray background on hover */
 }
 
 .btn-success {
-  background-color: #28a745; /* Green background color for the success button */
+    background-color: #28a745; /* Green background color for the success button */
 }
 
 .btn-success:hover {
-  background-color: #218838; /* Darker green background on hover */
+    background-color: #218838; /* Darker green background on hover */
 }
 
 .cooks-section {
-  margin-top: 20px; /* Space above the cooks section */
+    margin-top: 20px; /* Space above the cooks section */
 }
 
 .cooks-section h2 {
-  color: #2c3e50; /* Dark blue-gray color for the heading */
+    color: #2c3e50; /* Dark blue-gray color for the heading */
 }
 
 .cook-list {
-  list-style-type: none; /* Remove bullet points */
-  padding-left: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
 }
 
 .cook-list li {
-  padding: 10px 0; /* Space between list items */
-  border-bottom: 1px solid #dee2e6; /* Border between items */
-  font-size: 1.1em; /* Slightly larger text for readability */
+    padding: 10px 0; /* Space between list items */
+    border-bottom: 1px solid #dee2e6; /* Border between items */
+    font-size: 1.1em; /* Slightly larger text for readability */
 }
 
 .cook-list li:last-child {
-  border-bottom: none; /* Remove border from the last item */
+    border-bottom: none; /* Remove border from the last item */
 }

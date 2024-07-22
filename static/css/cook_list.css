@@ -1,64 +1,63 @@
-
 .header {
-  display: flex;
-  justify-content: space-between; /* Space between title and button */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 30px; /* Space below header */
+    display: flex;
+    justify-content: space-between; /* Space between title and button */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 30px; /* Space below header */
 }
 
 .header h1 {
-  color: #2c3e50; /* Dark blue-gray color for the heading */
-  font-size: 2.5em; /* Larger font size for emphasis */
+    color: #2c3e50; /* Dark blue-gray color for the heading */
+    font-size: 2.5em; /* Larger font size for emphasis */
 }
 
 .header .btn-primary {
-  padding: 10px 20px; /* Padding for the button */
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners for the button */
-  background-color: #007bff; /* Blue background color */
-  color: #fff; /* White text color */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .header .btn-primary:hover {
-  background-color: #0056b3; /* Darker blue background on hover */
+    background-color: #0056b3; /* Darker blue background on hover */
 }
 
 .table-responsive {
-  margin-top: 20px; /* Space above the table */
+    margin-top: 20px; /* Space above the table */
 }
 
 .table {
-  width: 100%; /* Full width for the table */
-  border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse table borders */
 }
 
 .table th, .table td {
-  padding: 10px; /* Padding for table cells */
-  border: 1px solid #dee2e6; /* Light border for table cells */
-  text-align: left; /* Left-align text in table cells */
+    padding: 10px; /* Padding for table cells */
+    border: 1px solid #dee2e6; /* Light border for table cells */
+    text-align: left; /* Left-align text in table cells */
 }
 
 .table th {
-  background-color: #e9ecef; /* Light gray background for table headers */
+    background-color: #e9ecef; /* Light gray background for table headers */
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f9f9f9; /* Light gray background for odd table rows */
+    background-color: #f9f9f9; /* Light gray background for odd table rows */
 }
 
 .cook-link {
-  text-decoration: none; /* Remove underline from links */
-  color: #007bff; /* Blue color for links */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Blue color for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .cook-link:hover {
-  color: #0056b3; /* Darker blue color on hover */
+    color: #0056b3; /* Darker blue color on hover */
 }
 
 p {
-  text-align: center; /* Center-align text */
-  color: #6c757d; /* Light gray color for text */
+    text-align: center; /* Center-align text */
+    color: #6c757d; /* Light gray color for text */
 }

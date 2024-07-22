@@ -1,50 +1,47 @@
-
 header {
-  text-align: center;
-  margin-bottom: 40px; /* Space between header and main content */
+    text-align: center;
+    margin-bottom: 40px; /* Space between header and main content */
 }
 
 header h1 {
-  color: #2c3e50; /* Dark blue-gray color for the heading */
-  font-size: 2.5em; /* Larger font size for emphasis */
+    color: #2c3e50; /* Dark blue-gray color for the heading */
+    font-size: 2.5em; /* Larger font size for emphasis */
 }
 
 header p {
-  color: #7f8c8d; /* Light gray color for the subheading */
-  font-size: 1.2em; /* Slightly larger font for readability */
+    color: #7f8c8d; /* Light gray color for the subheading */
+    font-size: 1.2em; /* Slightly larger font for readability */
 }
 
 .stats {
-  display: flex;
-  justify-content: space-around; /* Space out the stat items */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around; /* Space out the stat items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-bottom: 20px;
 }
 
 .stat-item {
-  flex: 1;
-  padding: 20px;
-  background-color: #ecf0f1; /* Light gray background for each item */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  margin: 10px; /* Space between items */
-  text-align: center; /* Center-align text within each item */
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light gray background for each item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 10px; /* Space between items */
+    text-align: center; /* Center-align text within each item */
 }
 
 .stat-item h2 {
-  color: #2980b9; /* Bright blue color for the heading */
+    color: #2980b9; /* Bright blue color for the heading */
 }
 
 .stat-item p {
-  font-size: 2em; /* Larger text for values */
-  color: #27ae60; /* Bright green color for values */
+    font-size: 2em; /* Larger text for values */
+    color: #27ae60; /* Bright green color for values */
 }
 
 footer {
-  margin-top: 20px; /* Space above footer */
-  text-align: center; /* Center-align footer text */
-  color: #7f8c8d; /* Light gray color */
-  font-size: 1.1em; /* Slightly larger font for readability */
+    margin-top: 20px; /* Space above footer */
+    text-align: center; /* Center-align footer text */
+    color: #7f8c8d; /* Light gray color */
+    font-size: 1.1em; /* Slightly larger font for readability */
 }
-
-
