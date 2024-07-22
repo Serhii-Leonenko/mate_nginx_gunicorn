@@ -1,32 +1,6 @@
-/* General reset for margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif; /* Modern and clean font */
-  line-height: 1.6;
-  background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background for a vibrant look */
-  color: #333; /* Dark text color for readability */
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  min-height: 100vh; /* Ensure body takes full viewport height */
-  padding: 20px; /* Padding to prevent content from touching edges */
-}
-
-.container {
-  width: 100%; /* Full width for the main content area */
-  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-  border-radius: 15px; /* Rounded corners for a modern look */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-  padding: 30px; /* Increased padding for more space */
-  text-align: center; /* Center text within the container */
-}
 
 header {
+  text-align: center;
   margin-bottom: 40px; /* Space between header and main content */
 }
 
@@ -74,74 +48,3 @@ footer {
 }
 
 
-
-
-/* Base styles */
-.container {
-  padding: 20px;
-  background-color: #f8f9fa;
-}
-
-.header {
-  margin-bottom: 20px;
-}
-
-.text-primary {
-  color: #007bff;
-}
-
-.btn-group {
-  margin-top: 10px;
-}
-
-.btn {
-  margin-right: 10px;
-  padding: 10px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
-}
-
-.btn-danger {
-  background-color: #dc3545;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
-}
-
-.info {
-  margin-bottom: 20px;
-}
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.table th,
-.table td {
-  padding: 10px;
-  border: 1px solid #dee2e6;
-  text-align: left;
-}
-
-.table th {
-  background-color: #e9ecef;
-}
-
-.dishes {
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.dish {
-  margin-bottom: 15px;
-}
-
-.text-muted {
-  color: #6c757d;
-}
