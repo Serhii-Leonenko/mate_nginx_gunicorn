@@ -1,0 +1,90 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Modern and clean font */
+  line-height: 1.6;
+  background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background for a vibrant look */
+  color: #333; /* Dark text color for readability */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  padding: 20px; /* Padding to prevent content from touching edges */
+}
+
+.container {
+  width: 100%; /* Full width for the main content area */
+  max-width: 800px; /* Limit maximum width for better readability */
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  padding: 30px; /* Increased padding for more space */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between title and buttons */
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #2c3e50; /* Dark blue-gray color for the heading */
+  font-size: 2em; /* Larger font size for emphasis */
+}
+
+.btn-group .btn {
+  margin-left: 10px; /* Space between buttons */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red background color for the danger button */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker red background on hover */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Gray background color for the secondary button */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker gray background on hover */
+}
+
+.btn-success {
+  background-color: #28a745; /* Green background color for the success button */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green background on hover */
+}
+
+.cooks-section {
+  margin-top: 20px; /* Space above the cooks section */
+}
+
+.cooks-section h2 {
+  color: #2c3e50; /* Dark blue-gray color for the heading */
+}
+
+.cook-list {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.cook-list li {
+  padding: 10px 0; /* Space between list items */
+  border-bottom: 1px solid #dee2e6; /* Border between items */
+  font-size: 1.1em; /* Slightly larger text for readability */
+}
+
+.cook-list li:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
