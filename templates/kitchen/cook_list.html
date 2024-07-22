@@ -1,36 +1,50 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
+{% load static %}
 
 {% block content %}
-    <h1>
-      Cook List
-      <a href="{% url 'kitchen:cook-create' %}" class="btn btn-primary link-to-page">
+  <link rel="stylesheet" href="{% static 'css/cook_list.css' %}">
+  <div class="container">
+    <div class="header">
+      <h1 class="text-primary">Cook List</h1>
+      <a href="{% url 'kitchen:cook-create' %}" class="btn btn-primary">
         Create
       </a>
-    </h1>
-  {% include "includes/search_form.html" %}
+    </div>
+
+    {% include "includes/search_form.html" %}
 
     {% if cook_list %}
-    <table class="table">
-      <tr>
-        <th>ID</th>
-        <th>Username</th>
-        <th>First name</th>
-        <th>Last name</th>
-        <th>Years of experience</th>
-      </tr>
-    {% for cook in cook_list %}
-      <tr>
-        <td>{{ cook.id }}</td>
-        <td><a href="{% url 'kitchen:cook-detail' cook.id %}">{{ cook.username }} {% if user == cook %} (Me){% endif %}</a></td>
-        <td>{{ cook.first_name }}</td>
-        <td>{{ cook.last_name }}</td>
-        <td>{{ cook.years_of_experience }}</td>
-      </tr>
-    {% endfor %}
-
-    </table>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Years of experience</th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for cook in cook_list %}
+            <tr>
+              <td>{{ cook.id }}</td>
+              <td>
+                <a href="{% url 'kitchen:cook-detail' cook.id %}" class="cook-link">
+                  {{ cook.username }} {% if user == cook %} (Me){% endif %}
+                </a>
+              </td>
+              <td>{{ cook.first_name }}</td>
+              <td>{{ cook.last_name }}</td>
+              <td>{{ cook.years_of_experience }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
     {% else %}
-      <p>There are no cook in the service.</p>
+      <p>No cooks available in the service.</p>
     {% endif %}
+  </div>
 {% endblock %}
