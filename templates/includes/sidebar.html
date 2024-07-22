@@ -1,22 +1,35 @@
-<ul class="sidebar-nav">
-  {% if user.is_authenticated %}
-    <li>
-      <a href="{% url 'kitchen:cook-detail' pk=user.id %}">User: {{ user.username }}</a>
-    </li>
-    <li>
-      <form action="{% url 'logout' %}" method="post">
-        {% csrf_token %}
-        <button class="btn btn-primary" type="submit">Logout</button>
-      </form>
-    </li>
-  {% else %}
-    <li>
-      <a href="{% url 'login' %}">Login</a>
-    </li>
-  {% endif %}
-  <br>
-  <li><a href="{% url 'kitchen:index' %}">Home page</a></li>
-  <li><a href="{% url 'kitchen:dish-type-list' %}">Dish type</a></li>
-  <li><a href="{% url 'kitchen:dish-list' %}">Dish</a></li>
-  <li><a href="{% url 'kitchen:cook-list' %}">Cooks</a></li>
-</ul>
+<div class="sidebar-nav">
+  <table>
+    <tbody>
+      {% if user.is_authenticated %}
+        <tr>
+          <td><a class="sidebar-link" href="{% url 'kitchen:cook-detail' pk=user.id %}">User: {{ user.username }}</a></td>
+        </tr>
+        <tr>
+          <td>
+            <form action="{% url 'logout' %}" method="post">
+              {% csrf_token %}
+              <button class="sidebar-button" type="submit">Logout</button>
+            </form>
+          </td>
+        </tr>
+      {% else %}
+        <tr>
+          <td><a class="sidebar-link" href="{% url 'login' %}">Login</a></td>
+        </tr>
+      {% endif %}
+      <tr>
+        <td><a class="sidebar-link" href="{% url 'kitchen:index' %}">Home page</a></td>
+      </tr>
+      <tr>
+        <td><a class="sidebar-link" href="{% url 'kitchen:dish-type-list' %}">Dish type</a></td>
+      </tr>
+      <tr>
+        <td><a class="sidebar-link" href="{% url 'kitchen:dish-list' %}">Dish</a></td>
+      </tr>
+      <tr>
+        <td><a class="sidebar-link" href="{% url 'kitchen:cook-list' %}">Cooks</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
