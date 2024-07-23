@@ -22,11 +22,24 @@ class Cook(AbstractUser):
 
 
 class Dish(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(
+        max_length=100,
+        unique=True
+    )
     description = models.TextField()
-    price = models.DecimalField(max_digits=5, decimal_places=2)
-    dish_type = models.ForeignKey(DishType, on_delete=models.CASCADE, related_name="dishes")
-    cook = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="dishes")
+    price = models.DecimalField(
+        max_digits=5,
+        decimal_places=2
+    )
+    dish_type = models.ForeignKey(
+        DishType,
+        on_delete=models.CASCADE,
+        related_name="dishes"
+    )
+    cook = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name="dishes"
+    )
 
     class Meta:
         ordering = ["name"]

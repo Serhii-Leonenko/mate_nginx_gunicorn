@@ -17,7 +17,6 @@ from kitchen.views import (
     CookListView,
     CookUpdateView,
     toggle_assign_to_dish,
-
 )
 
 urlpatterns = [

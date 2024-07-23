@@ -2,7 +2,6 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 from kitchen.models import DishType, Dish, Cook
-from kitchen.forms import DishSearchForm, DishTypeSearchForm, CookSearchForm
 
 DISH_TYPE_LIST_URL = reverse("kitchen:dish-type-list")
 DISH_LIST_URL = reverse("kitchen:dish-list")

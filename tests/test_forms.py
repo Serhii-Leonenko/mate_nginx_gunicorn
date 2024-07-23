@@ -48,7 +48,6 @@ class FormsTest(TestCase):
         self.assertEqual(form.cleaned_data["dish_type"], self.dish_type)
         self.assertEqual(list(form.cleaned_data["cook"]), [self.user])
 
-
     def test_cook_creation_form_is_valid(self):
         form_data = {
             "username": "cook1",
@@ -110,4 +109,3 @@ class FormsTest(TestCase):
         form = DishTypeSearchForm(data=form_data)
         self.assertTrue(form.is_valid())
         self.assertEqual(form.cleaned_data["name"], "Salad")
-

@@ -5,8 +5,14 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
-from kitchen.forms import CookYearsOfExperienceUpdateForm, CookCreationForm, CookSearchForm, DishForm, DishSearchForm, \
+from kitchen.forms import (
+    CookYearsOfExperienceUpdateForm,
+    CookCreationForm,
+    CookSearchForm,
+    DishForm,
+    DishSearchForm,
     DishTypeSearchForm
+)
 from kitchen.models import Cook, Dish, DishType
 
 
@@ -173,7 +179,9 @@ class CookDeleteView(LoginRequiredMixin, generic.DeleteView):
 
 
 @login_required
-def toggle_assign_to_dish(request: HttpRequest, pk: int) -> HttpResponseRedirect:
+def toggle_assign_to_dish(
+        request: HttpRequest, pk: int
+) -> HttpResponseRedirect:
     cook = Cook.objects.get(id=request.user.id)
     if (
         Dish.objects.get(id=pk) in cook.dishes.all()

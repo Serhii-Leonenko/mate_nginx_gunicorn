@@ -1,8 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.test import TestCase
-from django.urls import reverse
 
-from kitchen.models import Dish, DishType, Cook
+from kitchen.models import Dish, DishType
 
 
 class ModelTests(TestCase):
@@ -50,4 +49,3 @@ class ModelTests(TestCase):
         self.assertEqual(cook.username, username)
         self.assertEqual(cook.years_of_experience, years_of_experience)
         self.assertTrue(cook.check_password(password))
-
