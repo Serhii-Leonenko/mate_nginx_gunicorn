@@ -48,7 +48,15 @@ Run:
 python manage.py runserver
 ```
 
+## Check it out!
 
+[Restaurant Kitchen Service](https://restaurant-kitchen-service-u7vs.onrender.com/)
+
+
+<i>You can use the following credentials:</i>
+
+* <i>Login: Admin</i>
+* <i>Password: 1qazcde3</i>
 
 ## Key Features:
 
@@ -65,3 +73,6 @@ This feature ensures accountability and a streamlined workflow by assigning cook
 * Performance 
 
 The Restaurant Kitchen Service is designed to elevate the efficiency and collaboration within the kitchen, ultimately contributing to the success and reputation of the restaurant. Whether you are a small bistro or a large-scale eatery, this management system aims to be a valuable tool in enhancing the culinary operations of your establishment.
+
+## Demo
+![Website Interface](demo.png)
