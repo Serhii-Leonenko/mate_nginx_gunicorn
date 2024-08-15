@@ -1,12 +1,12 @@
 .container {
-  width: 100%; /* Full width for the main content area */
-  max-width: 600px; /* Limit maximum width for better readability */
-  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-  border-radius: 15px; /* Rounded corners for a modern look */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-  padding: 30px; /* Increased padding for more space */
-  text-align: center; /* Center text within the container */
-  margin: 50px auto; /* Center the container horizontally */
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  margin: 50px auto;
 }
 
 .alert {
@@ -19,12 +19,12 @@
 }
 
 h1 {
-  font-size: 2em; /* Larger font size for emphasis */
-  margin-bottom: 20px; /* Space below the heading */
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .login-form {
-  text-align: left; /* Align form elements to the left */
+  text-align: left;
 }
 
 .btn-primary {

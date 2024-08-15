@@ -1,45 +1,45 @@
 .container {
-    width: 100%; /* Full width for the main content area */
-    max-width: 800px; /* Limit maximum width for better readability */
-    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-    border-radius: 15px; /* Rounded corners for a modern look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-    padding: 30px; /* Increased padding for more space */
-    text-align: center; /* Center text within the container */
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
 }
 
 .confirmation-box h1 {
-    color: #2c3e50; /* Dark blue-gray color for the heading */
-    font-size: 2em; /* Larger font size for emphasis */
-    margin-bottom: 20px; /* Space below the heading */
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .form-actions {
-    margin-top: 20px; /* Space above the form actions */
+    margin-top: 20px;
 }
 
 .form-actions .btn {
-    margin: 0 10px; /* Horizontal space between buttons */
-    padding: 10px 20px; /* Padding for buttons */
-    border-radius: 4px; /* Rounded corners for buttons */
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* White text color */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-danger {
-    background-color: #dc3545; /* Red background color for the danger button */
+    background-color: #dc3545;
 }
 
 .btn-danger:hover {
-    background-color: #c82333; /* Darker red background on hover */
+    background-color: #c82333;
 }
 
 .btn-secondary {
-    background-color: #6c757d; /* Gray background color for the secondary button */
+    background-color: #6c757d;
 }
 
 .btn-secondary:hover {
-    background-color: #5a6268; /* Darker gray background on hover */
+    background-color: #5a6268;
 }

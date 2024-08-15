@@ -1,67 +1,65 @@
-/* Header styles */
 .header {
-    display: flex; /* Align header items in a row */
-    justify-content: space-between; /* Space between title and button */
-    align-items: center; /* Vertically center items */
-    margin-bottom: 20px; /* Space below header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .title {
-    color: #2c3e50; /* Dark blue-gray color for the heading */
-    font-size: 2.5em; /* Larger font size for emphasis */
+    color: #2c3e50;
+    font-size: 2.5em;
 }
 
 .create-button {
-    padding: 10px 20px; /* Padding for button */
-    border: none; /* Remove default border */
-    border-radius: 4px; /* Rounded corners for button */
-    background-color: #007bff; /* Blue background color */
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1em; /* Font size for button */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
 .create-button:hover {
-    background-color: #0056b3; /* Darker blue background on hover */
+    background-color: #0056b3;
 }
 
-/* Styles for dish list */
 .dish-list {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    text-align: left; /* Align text to the left */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
 .dish-item {
-    padding: 10px 0; /* Padding for each item */
-    border-bottom: 1px solid #ddd; /* Light gray border for separation */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .dish-item:last-child {
-    border-bottom: none; /* Remove border for last item */
+    border-bottom: none;
 }
 
 .dish-link {
-    display: block; /* Make the link take full width of the container */
-    padding: 10px; /* Add padding inside the link */
-    color: #007bff; /* Blue color for links */
-    background-color: #f8f9fa; /* Light background for each item */
-    border-radius: 4px; /* Rounded corners for background */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    display: block;
+    padding: 10px;
+    color: #007bff;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dish-link:hover {
-    background-color: #e2e6ea; /* Slightly darker background on hover */
-    color: #0056b3; /* Darker color on hover */
+    background-color: #e2e6ea;
+    color: #0056b3;
 }
 
 .dish-id {
-    font-weight: bold; /* Bold font for ID */
+    font-weight: bold;
 }
 
 .dish-name {
-    margin-left: 10px; /* Space between ID and name */
+    margin-left: 10px;
 }

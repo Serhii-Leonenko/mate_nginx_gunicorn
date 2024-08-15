@@ -1,29 +1,29 @@
 .container {
-    width: 100%; /* Full width for the main content area */
-    max-width: 600px; /* Limit maximum width for better readability */
-    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-    border-radius: 15px; /* Rounded corners for a modern look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-    padding: 30px; /* Increased padding for more space */
-    text-align: center; /* Center text within the container */
-    margin: 50px auto; /* Center the container horizontally */
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    margin: 50px auto;
 }
 
 .logout-message {
-    font-size: 1.5em; /* Larger font size for emphasis */
-    color: #2c3e50; /* Dark blue-gray color for the message */
-    margin-bottom: 20px; /* Space below the message */
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
 .login-again {
-    display: inline-block; /* Make the link a block element */
-    padding: 10px 20px; /* Padding for the link */
-    background-color: #007bff; /* Blue background color for the link */
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline from the link */
-    border-radius: 4px; /* Rounded corners for the link */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 .login-again:hover {
-    background-color: #0056b3; /* Darker blue background on hover */
+    background-color: #0056b3;
 }
