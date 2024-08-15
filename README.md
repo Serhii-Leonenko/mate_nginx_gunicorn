@@ -43,6 +43,8 @@ Create a superuser:
 python manage.py createsuperuser
 ```
 
+Rename .emv.template to .env file and populate it with the required data
+
 Run:
 ```shell
 python manage.py runserver
