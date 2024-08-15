@@ -9,8 +9,8 @@ from kitchen.models import Dish, Cook
 class DishForm(forms.ModelForm):
     cook = forms.ModelMultipleChoiceField(
         queryset=get_user_model().objects.all(),
-        widget=forms.CheckboxSelectMultiple,
-        required=False
+        widget=forms.CheckboxSelectMultiple(attrs={"autocomplete": "off"}),
+        required=False,
     )
 
     class Meta:
@@ -28,9 +28,7 @@ class CookCreationForm(UserCreationForm):
         )
 
     def clean_years_of_experience(self):
-        return validate_years_of_experience(
-            self.cleaned_data["years_of_experience"]
-        )
+        return validate_years_of_experience(self.cleaned_data["years_of_experience"])
 
 
 class CookYearsOfExperienceUpdateForm(forms.ModelForm):
@@ -39,9 +37,7 @@ class CookYearsOfExperienceUpdateForm(forms.ModelForm):
         fields = ["years_of_experience"]
 
     def clean_years_of_experience(self):
-        return validate_years_of_experience(
-            self.cleaned_data["years_of_experience"]
-        )
+        return validate_years_of_experience(self.cleaned_data["years_of_experience"])
 
 
 def validate_years_of_experience(
@@ -58,8 +54,8 @@ class CookSearchForm(forms.Form):
         required=False,
         label="",
         widget=forms.TextInput(
-            attrs={"placeholder": "Search by username"}
-        )
+            attrs={"placeholder": "Search by username", "autocomplete": "off"}
+        ),
     )
 
 
@@ -69,8 +65,8 @@ class DishSearchForm(forms.Form):
         required=False,
         label="",
         widget=forms.TextInput(
-            attrs={"placeholder": "Search by dish"}
-        )
+            attrs={"placeholder": "Search by dish", "autocomplete": "off"}
+        ),
     )
 
 
@@ -80,6 +76,6 @@ class DishTypeSearchForm(forms.Form):
         required=False,
         label="",
         widget=forms.TextInput(
-            attrs={"placeholder": "Search by name"}
-        )
+            attrs={"placeholder": "Search by name", "autocomplete": "off"}
+        ),
     )
