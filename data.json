@@ -1,0 +1,460 @@
+[
+  {
+    "model": "kitchen.dishtype",
+    "pk": 1,
+    "fields": {
+      "name": "Appetizer"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 2,
+    "fields": {
+      "name": "Main Course"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 3,
+    "fields": {
+      "name": "Dessert"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 4,
+    "fields": {
+      "name": "Beverage"
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 1,
+    "fields": {
+      "username": "JohnD",
+      "first_name": "John",
+      "last_name": "Doe",
+      "years_of_experience": 5
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 2,
+    "fields": {
+      "username": "Janes",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "years_of_experience": 8
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 3,
+    "fields": {
+      "username": "EmilyJ",
+      "first_name": "Emily",
+      "last_name": "Johnson",
+      "years_of_experience": 3
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 4,
+    "fields": {
+      "username": "MichaelW",
+      "first_name": "Michael",
+      "last_name": "Williams",
+      "years_of_experience": 6
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 5,
+    "fields": {
+      "username": "SarahB",
+      "first_name": "Sarah",
+      "last_name": "Brown",
+      "years_of_experience": 10
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 6,
+    "fields": {
+      "username": "ChrisD",
+      "first_name": "Chris",
+      "last_name": "Davis",
+      "years_of_experience": 2
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 7,
+    "fields": {
+      "username": "JessicaM",
+      "first_name": "Jessica",
+      "last_name": "Miller",
+      "years_of_experience": 7
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 8,
+    "fields": {
+      "username": "DanielG",
+      "first_name": "Daniel",
+      "last_name": "Garcia",
+      "years_of_experience": 4
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 9,
+    "fields": {
+      "username": "LauraM",
+      "first_name": "Laura",
+      "last_name": "Martinez",
+      "years_of_experience": 1
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 10,
+    "fields": {
+      "username": "JamesR",
+      "first_name": "James",
+      "last_name": "Rodriguez",
+      "years_of_experience": 9
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 1,
+    "fields": {
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce with Caesar dressing",
+      "price": "8.99",
+      "dish_type": 1,
+      "cook": [1, 2]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 2,
+    "fields": {
+      "name": "Spaghetti Carbonara",
+      "description": "Classic Italian pasta dish",
+      "price": "12.99",
+      "dish_type": 2,
+      "cook": [3, 4]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 3,
+    "fields": {
+      "name": "Cheesecake",
+      "description": "Rich and creamy cheesecake",
+      "price": "6.99",
+      "dish_type": 3,
+      "cook": [5, 6]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 4,
+    "fields": {
+      "name": "Margarita",
+      "description": "Refreshing cocktail with lime and tequila",
+      "price": "5.99",
+      "dish_type": 4,
+      "cook": [7, 8]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 5,
+    "fields": {
+      "name": "Chicken Wings",
+      "description": "Spicy and crispy chicken wings",
+      "price": "10.99",
+      "dish_type": 1,
+      "cook": [9, 10]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 6,
+    "fields": {
+      "name": "Beef Burger",
+      "description": "Juicy beef burger with all the trimmings",
+      "price": "11.99",
+      "dish_type": 2,
+      "cook": [1, 3]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 7,
+    "fields": {
+      "name": "Chocolate Mousse",
+      "description": "Decadent chocolate dessert",
+      "price": "7.99",
+      "dish_type": 3,
+      "cook": [2, 4]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 8,
+    "fields": {
+      "name": "Lemonade",
+      "description": "Freshly squeezed lemonade",
+      "price": "3.99",
+      "dish_type": 4,
+      "cook": [5, 6]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 9,
+    "fields": {
+      "name": "Bruschetta",
+      "description": "Toasted bread with tomatoes and basil",
+      "price": "5.99",
+      "dish_type": 1,
+      "cook": [7, 8]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 10,
+    "fields": {
+      "name": "Grilled Salmon",
+      "description": "Perfectly grilled salmon fillet",
+      "price": "14.99",
+      "dish_type": 2,
+      "cook": [9, 10]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 11,
+    "fields": {
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert",
+      "price": "6.99",
+      "dish_type": 3,
+      "cook": [1, 2]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 12,
+    "fields": {
+      "name": "Iced Tea",
+      "description": "Chilled tea with lemon",
+      "price": "2.99",
+      "dish_type": 4,
+      "cook": [3, 4]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 13,
+    "fields": {
+      "name": "Stuffed Mushrooms",
+      "description": "Mushrooms stuffed with cheese and herbs",
+      "price": "8.99",
+      "dish_type": 1,
+      "cook": [5, 6]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 14,
+    "fields": {
+      "name": "Steak Frites",
+      "description": "Grilled steak with fries",
+      "price": "19.99",
+      "dish_type": 2,
+      "cook": [7, 8]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 15,
+    "fields": {
+      "name": "Panna Cotta",
+      "description": "Creamy Italian dessert",
+      "price": "5.99",
+      "dish_type": 3,
+      "cook": [9, 10]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 16,
+    "fields": {
+      "name": "Espresso",
+      "description": "Strong and rich coffee",
+      "price": "2.99",
+      "dish_type": 4,
+      "cook": [1, 3]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 17,
+    "fields": {
+      "name": "Garlic Bread",
+      "description": "Toasted bread with garlic butter",
+      "price": "4.99",
+      "dish_type": 1,
+      "cook": [2, 4]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 18,
+    "fields": {
+      "name": "Lobster Bisque",
+      "description": "Rich and creamy lobster soup",
+      "price": "15.99",
+      "dish_type": 2,
+      "cook": [5, 6]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 19,
+    "fields": {
+      "name": "Apple Pie",
+      "description": "Classic American dessert",
+      "price": "4.99",
+      "dish_type": 3,
+      "cook": [7, 8]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 20,
+    "fields": {
+      "name": "Mint Julep",
+      "description": "Refreshing cocktail with mint and bourbon",
+      "price": "6.99",
+      "dish_type": 4,
+      "cook": [9, 10]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 21,
+    "fields": {
+      "name": "Mozzarella Sticks",
+      "description": "Fried cheese sticks with marinara sauce",
+      "price": "7.99",
+      "dish_type": 1,
+      "cook": [1, 2]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 22,
+    "fields": {
+      "name": "Ribeye Steak",
+      "description": "Grilled ribeye steak",
+      "price": "22.99",
+      "dish_type": 2,
+      "cook": [3, 4]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 23,
+    "fields": {
+      "name": "Chocolate Lava Cake",
+      "description": "Warm cake with a molten chocolate center",
+      "price": "6.99",
+      "dish_type": 3,
+      "cook": [5, 6]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 24,
+    "fields": {
+      "name": "Mojito",
+      "description": "Refreshing cocktail with mint and rum",
+      "price": "5.99",
+      "dish_type": 4,
+      "cook": [7, 8]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 25,
+    "fields": {
+      "name": "Spring Rolls",
+      "description": "Crispy rolls with vegetable filling",
+      "price": "6.99",
+      "dish_type": 1,
+      "cook": [9, 10]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 26,
+    "fields": {
+      "name": "Lasagna",
+      "description": "Layers of pasta with meat and cheese",
+      "price": "11.99",
+      "dish_type": 2,
+      "cook": [1, 3]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 27,
+    "fields": {
+      "name": "Brownie",
+      "description": "Chocolate dessert square",
+      "price": "3.99",
+      "dish_type": 3,
+      "cook": [2, 4]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 28,
+    "fields": {
+      "name": "Hot Chocolate",
+      "description": "Warm chocolate drink",
+      "price": "2.99",
+      "dish_type": 4,
+      "cook": [5, 6]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 29,
+    "fields": {
+      "name": "Onion Rings",
+      "description": "Crispy fried onion rings",
+      "price": "6.99",
+      "dish_type": 1,
+      "cook": [7, 8]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 30,
+    "fields": {
+      "name": "Pizza Margherita",
+      "description": "Classic pizza with tomato and mozzarella",
+      "price": "9.99",
+      "dish_type": 2,
+      "cook": [9, 10]
+    }
+  }
+]
