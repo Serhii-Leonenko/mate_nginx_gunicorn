@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+{% load static %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/dish_type_list.css' %}">
+  <div class="container">
+    <div class="header">
+      <h1 class="text-primary">Dish Type List</h1>
+      <a href="{% url 'kitchen:dish-type-create' %}" class="btn btn-primary link-to-page">Create</a>
+    </div>
+
+    {% if dish_type_list %}
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for dish_type in dish_type_list %}
+            <tr>
+              <td>{{ dish_type.id }}</td>
+              <td>{{ dish_type.name }}</td>
+              <td>
+                <a href="{% url 'kitchen:dish-type-update' pk=dish_type.id %}" class="btn btn-secondary">
+                  Update
+                </a>
+              </td>
+              <td>
+                <a href="{% url 'kitchen:dish-type-delete' pk=dish_type.id %}" class="btn btn-danger">
+                  Delete
+                </a>
+              </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <p>No dish types available in the service.</p>
+    {% endif %}
+  </div>
+{% endblock %}

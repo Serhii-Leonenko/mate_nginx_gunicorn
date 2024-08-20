@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <div class="container">
+    <header>
+      <h1>Restaurant Service</h1>
+      <p>Welcome to our restaurant service dashboard.</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat-item">
+        <h2>Number of Cooks</h2>
+        <p>{{ num_cooks }}</p>
+      </div>
+      <div class="stat-item">
+        <h2>Number of Dishes</h2>
+        <p>{{ num_dishes }}</p>
+      </div>
+      <div class="stat-item">
+        <h2>Number of Dish Types</h2>
+        <p>{{ num_dish_types }}</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.</p>
+    </footer>
+  </div>
+{% endblock %}

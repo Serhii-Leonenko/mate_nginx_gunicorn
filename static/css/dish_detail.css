@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 2em;
+}
+
+.btn-group .btn {
+    margin-left: 10px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.cooks-section {
+    margin-top: 20px;
+}
+
+.cooks-section h2 {
+    color: #2c3e50;
+}
+
+.cook-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cook-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 1.1em;
+}
+
+.cook-list li:last-child {
+    border-bottom: none;
+}
