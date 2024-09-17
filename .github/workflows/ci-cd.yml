@@ -1,0 +1,25 @@
+name: Deploy Django App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy Django App to Server
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to server
+        run: |
+          ssh ${{secrets.USER}}@${{secrets.SERVER_IP}} -p ${{secret.SSH_PORT}} 'cd /home/ubuntu/restaurant-kitchen-service/ && git pull origin main'
+          ssh ${{secrets.USER}}@${{secrets.SERVER_IP}} -p ${{secret.SSH_PORT}} 'cd /home/ubuntu/restaurant-kitchen-service/ && source venv/bin/activate && pip install -r requirements.txt'
+          ssh ${{secrets.USER}}@${{secrets.SERVER_IP}} -p ${{secret.SSH_PORT}} 'cd /home/ubuntu/restaurant-kitchen-service/ && source venv/bin/activate && python manage.py migrate'
+          ssh ${{secrets.USER}}@${{secrets.SERVER_IP}} -p ${{secret.SSH_PORT}} 'cd /home/ubuntu/restaurant-kitchen-service/ && source venv/bin/activate && python manage.py collectstatic --noinput'
+          ssh ${{secrets.USER}}@${{secrets.SERVER_IP}} -p ${{secret.SSH_PORT}} 'sudo systemctl restart restaurant.service'
